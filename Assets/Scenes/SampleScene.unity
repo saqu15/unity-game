@@ -220,8 +220,9 @@ GameObject:
   - component: {fileID: 321248417}
   - component: {fileID: 321248420}
   - component: {fileID: 321248421}
+  - component: {fileID: 321248422}
   m_Layer: 0
-  m_Name: Idle_0
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -237,7 +238,7 @@ Animator:
   m_GameObject: {fileID: 321248416}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7e02301b443bc6e4dab14c8d47a1c821, type: 2}
+  m_Controller: {fileID: 9100000, guid: b3a10c84cb1ac664cabbf6ffe72d5ac0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -362,6 +363,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95294523, y: 1.4982862}
   m_EdgeRadius: 0
+--- !u!114 &321248422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321248416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb91e0227332524580c9c47ca015d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1055077303}
   - component: {fileID: 1055077304}
+  - component: {fileID: 1055077305}
   m_Layer: 0
   m_Name: background4b
   m_TagString: Untagged
@@ -530,6 +546,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1055077305
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055077302}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bd94476e674f5984a8fde898ed5bdf2e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1476418992
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,7 +713,7 @@ GameObject:
   - component: {fileID: 1710330338}
   m_Layer: 0
   m_Name: Platforms
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

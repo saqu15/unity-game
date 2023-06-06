@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 83a0bd16eeaf6694cb2de584cdfdddf5
+guid: bf76d56d3ea753746bfb2cdb07c1845e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,23 +101,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jump_0
+      name: RunLeft_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,20 +113,20 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3da70f36b66d4c941b37a81172cac46e
-      internalID: -1115395362
+      spriteID: aa3073df4cc924e49934a2e1caa45e10
+      internalID: 393494631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_1
+      name: RunLeft_1
       rect:
         serializedVersion: 2
         x: 128
@@ -146,20 +134,20 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c535aad1acf96964fa851ae2482f01af
-      internalID: 565338761
+      spriteID: ff37c43ea02601f428b27f406e27a8a9
+      internalID: -672629091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_2
+      name: RunLeft_2
       rect:
         serializedVersion: 2
         x: 0
@@ -167,20 +155,20 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec27638ccb6e7e8479a668db5d08c82d
-      internalID: 1658783876
+      spriteID: c327db89332f12747a819542d4d3b687
+      internalID: 1124924489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_3
+      name: RunLeft_3
       rect:
         serializedVersion: 2
         x: 128
@@ -188,20 +176,20 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f29596006ad66247aa9d15b8bdef823
-      internalID: 245653386
+      spriteID: 1dcb525df14860e498b6348bfb91f464
+      internalID: -1989671352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_4
+      name: RunLeft_4
       rect:
         serializedVersion: 2
         x: 0
@@ -209,20 +197,20 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2989fbc3e87279645b11d349e889b8d7
-      internalID: -13190493
+      spriteID: 34c050c69b64a3e42bbe8f6843fd6908
+      internalID: 1761052624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_5
+      name: RunLeft_5
       rect:
         serializedVersion: 2
         x: 128
@@ -230,20 +218,20 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b532fd72cb5fa5249ae0299541df649b
-      internalID: -1130047358
+      spriteID: 0aa692e57195388419833fc0dc6261ab
+      internalID: -610967329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_6
+      name: RunLeft_6
       rect:
         serializedVersion: 2
         x: 0
@@ -251,20 +239,20 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41eb63ceec2d71e499ebeb611c349ec0
-      internalID: 1063560798
+      spriteID: 0fc1fd0adbaf9a44fb86e28f4471c34f
+      internalID: 1078100314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_7
+      name: RunLeft_7
       rect:
         serializedVersion: 2
         x: 128
@@ -272,14 +260,14 @@ TextureImporter:
         width: 128
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61d45ec9da6f96c4eb053d287419214e
-      internalID: 2062578898
+      spriteID: 1343ae3fd009fe54096d9c6a1faba8b1
+      internalID: -2065969199
       vertices: []
       indices: 
       edges: []
@@ -295,14 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jump_0: -1115395362
-      Jump_1: 565338761
-      Jump_2: 1658783876
-      Jump_3: 245653386
-      Jump_4: -13190493
-      Jump_5: -1130047358
-      Jump_6: 1063560798
-      Jump_7: 2062578898
+      RunLeft_0: 393494631
+      RunLeft_1: -672629091
+      RunLeft_2: 1124924489
+      RunLeft_3: -1989671352
+      RunLeft_4: 1761052624
+      RunLeft_5: -610967329
+      RunLeft_6: 1078100314
+      RunLeft_7: -2065969199
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
