@@ -377,6 +377,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 5
+  rollSpeed: 6
+  rollDuration: 0.5
+  rollCooldown: 0.1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
