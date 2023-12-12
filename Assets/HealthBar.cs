@@ -5,16 +5,36 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
+    public static HealthBar Instance;
     public Slider slider;
 
-    public void SetMaxHealth(int health)
+    private void Awake()
+    {
+        Instance = this;
+    }
+    public void SetMaxHealth(float health)
     {
         slider.maxValue = health;
         slider.value = health;
     }
-    
-    public void SetHealth(int health)
+    public float GetMaxHealth()
     {
-        slider.value = health;
+        return slider.maxValue;
+    }
+    
+    public void SetHealth(float health)
+    {
+        if(health < GetMaxHealth())
+        {
+            slider.value = health;
+        }
+        else
+        {
+            slider.value = GetMaxHealth();
+        }
+    }
+    public float GetHealth()
+    {
+        return slider.value;
     }
 }
