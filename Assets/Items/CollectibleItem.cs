@@ -4,14 +4,12 @@ using UnityEngine;
 
 public abstract class CollectibleItem : MonoBehaviour
 {
-    public string itemName;
-    public int itemID;
-    public Sprite itemIcon;
+    public CollectibleItemData itemData;
 
     public virtual void Awake()
     {
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = itemIcon;
+        spriteRenderer.sprite = itemData.itemIcon;
         spriteRenderer.sortingLayerName = "Collectible";
     }
     public virtual void PickUp()
