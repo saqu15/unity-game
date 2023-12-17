@@ -71,6 +71,9 @@ public class Campfire : MonoBehaviour
     {
         player.GetComponent<CharacterController2D>().enabled = false;
         player.GetComponent<PlayerCombat>().enabled = false;
+        animator.SetBool("IsMovingRight", false);
+        animator.SetBool("IsMovingLeft", false);
+        animator.SetBool("IsJumping", false);
         campfirePanel.SetActive(true);
         Button restButton = campfirePanel.transform.Find("RestButton").GetComponent<Button>();
         restButton.onClick.RemoveAllListeners();
