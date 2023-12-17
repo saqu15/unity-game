@@ -79,6 +79,7 @@ public class Campfire : MonoBehaviour
             HidePanel();
             animator.SetTrigger("Rest");
             StartCoroutine(UseCampfire());
+            interactionText.text = "";
             HealthBar.Instance.SetHealth(HealthBar.Instance.GetMaxHealth());
         });
 
@@ -89,6 +90,7 @@ public class Campfire : MonoBehaviour
             HidePanel();
             animator.SetTrigger("Pray");
             StartCoroutine(UseCampfire());
+            interactionText.text = "";
             int damage = player.GetComponent<PlayerCombat>().GetAttackDamage();
             damage = (int)(itemData.damageMulti * damage);
             player.GetComponent<PlayerCombat>().SetAttackDamage(damage);
