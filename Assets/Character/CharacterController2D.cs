@@ -10,40 +10,31 @@ public class CharacterController2D : MonoBehaviour
     public float rollDuration = 0.5f;
     public float rollCooldown = 0.1f;
 
+
     private Rigidbody2D rb;
+    private Animator animator;
     private bool isJumping = false;
     private bool isRolling = false;
     private bool canRoll = true;
     private int jumpCount = 0;
 
-    private float drinkCooldownTime = 0.5f;
-    private float drinkNextTime = 0f;
+    
     private void Start()
     {
-        Animator animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         animator.SetBool("IsFacingRight", true);
     }
 
     private void Update()
     {
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
         float moveX = Input.GetAxis("Horizontal");
 
-        Animator animator = GetComponent<Animator>();
         bool isMovingRight = Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D);
         bool isMovingLeft = Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A);
         bool rollKey = Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl);
-
-        if (Input.GetKeyDown(KeyCode.E) && Time.time > drinkNextTime)
-        {
-            if (InventoryController.Instance.HasHealthPotions())
-            {
-                animator.SetTrigger("DrinkPotion");
-                InventoryController.Instance.UseHealthPotion();
-
-                drinkNextTime = Time.time + drinkCooldownTime;
-            }
-        }
+        
         if (isRolling)
         {
             rb.velocity = new Vector2(moveX * rollSpeed, rb.velocity.y);

@@ -13,7 +13,7 @@ TagManager:
   - Water
   - UI
   - Enemies
-  - 
+  - Blackscreeen
   - 
   - 
   - 
@@ -50,6 +50,9 @@ TagManager:
     locked: 0
   - name: Platforms
     uniqueID: 3500400005
+    locked: 0
+  - name: WorldObject
+    uniqueID: 3164920813
     locked: 0
   - name: Collectible
     uniqueID: 4163921099

@@ -18,12 +18,12 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        damage = GameObject.Find("Player").GetComponent<PlayerCombat>().attackDamage;
         currentHealth = maxHealth;
     }
 
     public void TakeDamage(int damage)
     {
+        damage = GameObject.Find("Player").GetComponent<PlayerCombat>().GetAttackDamage();
         currentHealth -= damage;
 
         animator.SetTrigger("Hurt");

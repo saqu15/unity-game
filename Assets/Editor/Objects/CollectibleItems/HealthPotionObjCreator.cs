@@ -12,11 +12,15 @@ public class HealthPotionObjCreator
         SpriteRenderer spriteRenderer = healthPotionObj.AddComponent<SpriteRenderer>();
         Rigidbody2D rigidbody2D = healthPotionObj.AddComponent<Rigidbody2D>();
         HealthPotion healthPotionScript = healthPotionObj.AddComponent<HealthPotion>();
+        
+        spriteRenderer.sortingLayerName = "Collectible";
 
         boxCollider.isTrigger = true;
         rigidbody2D.bodyType = RigidbodyType2D.Static;
 
         healthPotionScript.itemData = Resources.Load<CollectibleItemData>("HealthPotionData");
+
+        spriteRenderer.sprite = healthPotionScript.itemData.itemIcon;
 
         GameObjectUtility.SetParentAndAlign(healthPotionObj, menuCommand.context as GameObject);
 

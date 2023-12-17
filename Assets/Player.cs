@@ -7,16 +7,16 @@ public class Player : MonoBehaviour
     public Animator animator;
 
     public int maxHealth = 100;
-    public int currentHealth;
 
     void Start()
     {
-        currentHealth = maxHealth;
         HealthBar.Instance.SetMaxHealth(maxHealth);
+        HealthBar.Instance.SetHealth(maxHealth);
     }
 
     public void TakeDamage(int damage)
     {
+        int currentHealth = (int)HealthBar.Instance.GetHealth();
         currentHealth -= damage;
 
         if (currentHealth <= 0)

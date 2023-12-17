@@ -11,7 +11,6 @@ public class PlayerCombat : MonoBehaviour
     public float attackRate = 2f;
     float nextAttackTime = 0f;
 
-    // Update is called once per frame
     void Update()
     {
         if(Time.time >= nextAttackTime)
@@ -34,5 +33,14 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         animator.SetTrigger("Attack");
+    }
+
+    public int GetAttackDamage()
+    {
+        return attackDamage;
+    }
+    public void SetAttackDamage(int newDamage)
+    {
+        attackDamage = newDamage;
     }
 }
