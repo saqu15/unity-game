@@ -1,4 +1,5 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,7 +27,7 @@ public class HealthBar : MonoBehaviour
     {
         if(health < GetMaxHealth())
         {
-            slider.value = health;
+            slider.value = (float)Math.Ceiling(health);
         }
         else
         {
