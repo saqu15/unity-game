@@ -45,7 +45,12 @@ public class Enemy : MonoBehaviour
 
         animator.SetBool("IsDead", true);
 
-        GetComponent<Collider2D>().enabled = false;
+        Collider2D[] colliders = this.GetComponentsInChildren<Collider2D>();
+        foreach (Collider2D collider in colliders)
+        {
+            collider.enabled = false;
+        }
+
         this.enabled = false;
     }
 
