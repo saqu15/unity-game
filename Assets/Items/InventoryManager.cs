@@ -30,7 +30,7 @@ public class InventoryManager : MonoBehaviour
 
     public void UseHealthPotion()
     {
-        if (HasHealthPotions())
+        if (HasHealthPotions() && (HealthBar.Instance.GetHealth() < HealthBar.Instance.GetMaxHealth()))
         {
             healthPotionCount--;
             HealthBar.Instance.SetHealth(HealthBar.Instance.GetHealth()+healthPotionValue);
